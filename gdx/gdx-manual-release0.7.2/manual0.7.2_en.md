@@ -51,19 +51,6 @@ if you intend to become a storage host, please click [here](#Section-Four-Storag
 - [Section Five: Program Clean Start](#section-five-program-clean-start)
 - [Contact Information](#contact-information)
 
-
-    - [Step4.1. Node Termination](#Step41-Node-Termination)
-    - [Step4.2. Start Node](#Step42-Start-Node)
-    - [Step4.3. Open `gdx` Console](#Step43-Open-gdx-Console)
-    - [Step4.4. Create Account and Start Mining](#Step44-Create-Account-and-Start-Mining)
-    - [Step4.5. Unlock Account](#Step45-Unlock-Account)
-    - [Step4.6. Check Balance](#Step46-Check-Balance)
-    - [Step4.7. Add Folder](#Step47-Add-Folder)
-    - [Step4.8. Host Announcement](#Step48-Host-Announcement)
-
-- [Section Five: Program Clean Start](#Section-Five-Program-Clean-Start)
-- [Contact Information](#Contact-Information)
-
 ## Important
 
 **Please read Section One: Preparation carefully**
@@ -74,7 +61,7 @@ if you intend to become a storage host, please click [here](#Section-Four-Storag
 
 Use the [link here](https://forms.gle/ymb8XKUVKAo2fuTc9) to submit the DxChain Testnet3.0 Test Node Application. When we received and reviewed your application, a download link will be sent to your email address. Download the `gdx` executable using the link provided and rename it to `gdx`. Then open the terminal.
 
-<span style="color:red">**NOTE: the executable downloaded only supports 64bit operating system**</span>
+**NOTE: the executable downloaded only supports 64bit operating system**
 
 ### Step1.2. Executable Relocation
 
@@ -124,7 +111,7 @@ Every node can become a miner regardless of its role. If you do not intend to be
 $ gdx
 ```
 
-<span style="color:red">**NOTE: Both storage client and storage host have full functionality of miner.**</span>
+**NOTE: Both storage client and storage host have full functionality of miner.**
 
 ### Step2.1. Start Node
 
@@ -151,7 +138,7 @@ To acquire tokens, you will first need to create an account and start mining. Ty
 > miner.start()
 ```
 
-<span style="color:red">**NOTE: for simplification, the password used in this command is empty, meaning the account you created will not be protected by a password. To create an account with a password, use the following command in the console, the system will prompt you to enter a password.**</span>
+**NOTE: for simplification, the password used in this command is empty, meaning the account you created will not be protected by a password. To create an account with a password, use the following command in the console, the system will prompt you to enter a password.**
 
 ```js
 > personal.newAccount()
@@ -175,13 +162,13 @@ To start the node as a storage client, run the following command in the terminal
 $ gdx --storageclient
 ```
 
-<span style="color:red">**NOTE: a node can either become a storage client or a storage host. To switch between two roles, you must [clean start](#Section-Five-Program-Clean-Start) the node**</span>
+**NOTE: a node can either become a storage client or a storage host. To switch between two roles, you must [clean start](#Section-Five-Program-Clean-Start) the node**
 
 ## Storage Client Execution Steps
 
 ### Step3.1. Node Termination
 
-<span style="color:red">**Note: skip step 3.1 if you have not yet to run the `gdx` program**</span>
+**Note: skip step 3.1 if you have not yet to run the `gdx` program**
 
 If the node is running or had ran previously, you must terminate the program by pressing `Ctrl + C`, and then [clean start](#Section-Five-Program-Clean-Start) the node
 
@@ -210,7 +197,7 @@ In order to create contract and start to upload file, you must have some tokens 
 > miner.start()
 ```
 
-<span style="color:red">**NOTE: for simplification, the password used in this command is empty, meaning the account you created will not be protected by a password. To create an account with a password, use the following command in the console, the system will prompt you to enter a password**</span>
+**NOTE: for simplification, the password used in this command is empty, meaning the account you created will not be protected by a password. To create an account with a password, use the following command in the console, the system will prompt you to enter a password**
 
 ```js
 > personal.newAccount()
@@ -224,7 +211,7 @@ If the account is locked, you will not be allowed to make any transaction. There
 > personal.unlockAccount(eth.accounts[0], "", 0)
 ```
 
-<span style="color:red">**NOTE: if your account if protected by the password, you can replace `""` from the command above with `"YOUR_PASSWORD"`**</span>
+**NOTE: if your account if protected by the password, you can replace `""` from the command above with `"YOUR_PASSWORD"`**
 
 ### Step3.6. Check Balance
 
@@ -234,7 +221,7 @@ As mentioned above, to create contract and then to upload files, you must have e
 > eth.getBalance(eth.accounts[0])
 ```
 
-<span style="color:red">**NOTE: Before you proceed to _Step3.7. Client Configuration_, please make sure that you have connected to at least 3 hosts and check their version. You can run the following code to get hosts number and check version, the correct version should be _1.0.1_**</span>
+**NOTE: Before you proceed to _Step3.7. Client Configuration_, please make sure that you have connected to at least 3 hosts and check their version. You can run the following code to get hosts number and check version, the correct version should be _1.0.1_**
 ```shell
 sclient.hosts
 ```
@@ -265,7 +252,7 @@ $ dd if=/dev/urandom of=upload.file count=512 bs=1024
 ```
 
 Then, get the absolute path of the file by using the following command  
-<span style="color:red">**NOTE: replace `{$FILE_NAME}` with the name of the file you want to upload**</span>
+**NOTE: replace `{$FILE_NAME}` with the name of the file you want to upload**
 
 ```shell
 $ cd ~
@@ -273,7 +260,7 @@ $ ls "`pwd`/{$FILE_NAME}"
 ```
 
 In the `gdx` console, use the following command to upload the file.  
-<span style="color:red">**Note: replace `{$FILE_PATH}` with the absolute path of the file**</span>
+**Note: replace `{$FILE_PATH}` with the absolute path of the file**
 
 ```js
 > sclient.upload("{$FILE_PATH}", "download.file")
@@ -308,7 +295,7 @@ The file will be downloaded to your home directory as `download.file`
 
 ### Step3.11. File Verification
 
-<span style="color:red">**Note: skip this step if you uploaded your own file**</span>
+**Note: skip this step if you uploaded your own file**
 
 Since the file uploaded is generated and filled in with random data. To check if the file downloaded is the file you actually uploaded, use the following commands
 
@@ -330,12 +317,12 @@ To start the node as a storage host, run the following command in the terminal
 $ gdx --storagehost
 ```
 
-<span style="color:red">**NOTE: a node can either become a storage client or a storage host. To switch between two roles, you must [clean start](#Section-Five-Program-Clean-Start) the node**</span>
+**NOTE: a node can either become a storage client or a storage host. To switch between two roles, you must [clean start](#Section-Five-Program-Clean-Start) the node**
 ## Storage Host Execution Steps
 
 ### Step4.1. Node Termination
 
-<span style="color:red">**Note: skip step 3.1 if you have not yet to run the `gdx` program**</span>
+**Note: skip step 3.1 if you have not yet to run the `gdx` program**
 
 If the node is running or had ran previously, you must terminate the program by pressing `Ctrl + C`, and then [clean start](#Section-Five-Program-Clean-Start) the node
 
@@ -364,7 +351,7 @@ In order to create contract with clients, you must have some tokens first. To ge
 > miner.start()
 ```
 
-<span style="color:red">**NOTE: for simplification, the password used in this command is empty, meaning the account you created will not be protected by a password. To create an account with a password, use the following command in the console, the system will prompt you to enter a password**</span>
+**NOTE: for simplification, the password used in this command is empty, meaning the account you created will not be protected by a password. To create an account with a password, use the following command in the console, the system will prompt you to enter a password**
 
 ```js
 > personal.newAccount()
@@ -378,7 +365,7 @@ If the account is locked, you will not be allowed to make any transaction. There
 > personal.unlockAccount(eth.accounts[0], "", 0)
 ```
 
-<span style="color:red">**NOTE: if your account if protected by the password, you can replace `""` from the command above with `"YOUR_PASSWORD"`**</span>
+**NOTE: if your account if protected by the password, you can replace `""` from the command above with `"YOUR_PASSWORD"`**
 
 ### Step4.6. Check Balance
 
