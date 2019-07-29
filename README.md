@@ -1,6 +1,6 @@
 # GoDx Documentation
 
-Official [gdx](https://github.com/DxChainNetwork/godx) program documentations
+Official [gdx](https://github.com/DxChainNetwork/godx) program documentation
 
 ## GoDx Manual
 
