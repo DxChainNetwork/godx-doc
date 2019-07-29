@@ -86,7 +86,7 @@ $ chmod +x gdx
 
 ### 步骤1.5 验证版本
 
-您可以通过输入以下命令以验证版本。正确的版本应当是：`Version: 0.7.0-unstable`
+您可以通过输入以下命令以验证版本。正确的版本应当是：`Version: 0.7.2-unstable`
 ```shell
 $ ~/bin/gdx version
 ```

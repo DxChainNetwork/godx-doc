@@ -96,7 +96,7 @@ $ chmod +x gdx
 
 ### Step1.5. Version Verification
 
-Check the executable version by running the following command in the terminal. The expected version will be `Version: 0.7.0-unstable`
+Check the executable version by running the following command in the terminal. The expected version will be `Version: 0.7.2-unstable`
 
 ```shell
 $ ~/bin/gdx version
