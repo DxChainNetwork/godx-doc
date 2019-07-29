@@ -171,7 +171,6 @@ $ ~/bin/gdx attach
 ```js
 > personal.unlockAccount(eth.accounts[0], "", 0)
 ```
-**注意：如果您之前创建账户时选择了创建密码，请您用`"YOUR_PASSWORD"`替换`""`。**
 
 ### 步骤3.6 检查余额
 
@@ -298,7 +297,6 @@ $ ~/bin/gdx attach
 ```js
 > personal.unlockAccount(eth.accounts[0], "", 0)
 ```
-**注意：如果您之前创建账户时选择了创建密码，请您用`"YOUR_PASSWORD"`替换`""`。**
 
 ### 步骤4.6 检查余额
 

@@ -204,8 +204,6 @@ If the account is locked, you will not be allowed to make any transaction. There
 > personal.unlockAccount(eth.accounts[0], "", 0)
 ```
 
-**NOTE: if your account if protected by the password, you can replace `""` from the command above with `"YOUR_PASSWORD"`**
-
 ### Step3.6. Check Balance
 
 As mentioned above, to create contract and then to upload files, you must have enough tokens. You can use the following command in the console to check the account balance. Wait until the result is not 0, and then you can proceed to the next step
@@ -350,8 +348,6 @@ If the account is locked, you will not be allowed to make any transaction. There
 ```js
 > personal.unlockAccount(eth.accounts[0], "", 0)
 ```
-
-**NOTE: if your account if protected by the password, you can replace `""` from the command above with `"YOUR_PASSWORD"`**
 
 ### Step4.6. Check Balance
 
