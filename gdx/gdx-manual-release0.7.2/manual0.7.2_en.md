@@ -108,7 +108,7 @@ _Congratulations! You have completed Section One: Preparation!_
 Every node can become a miner regardless of its role. If you do not intend to become neither a storage client nor a storage host, you can start the program by running the following command in the terminal.
 
 ```shell
-$ gdx
+$ ~/bin/gdx
 ```
 
 **NOTE: Both storage client and storage host have full functionality of miner.**
@@ -156,7 +156,7 @@ By paying DX tokens to storage hosts, storage client is able to rent storage spa
 To start the node as a storage client, run the following command in the terminal
 
 ```shell
-$ gdx --storageclient
+$ ~/bin/gdx --storageclient
 ```
 
 **NOTE: a node can either become a storage client or a storage host. To switch between two roles, you must [clean start](#Section-Five-Program-Clean-Start) the node**
@@ -302,7 +302,7 @@ Storage host serves as storage service provider, gaining profit for storing data
 To start the node as a storage host, run the following command in the terminal
 
 ```shell
-$ gdx --storagehost
+$ ~/bin/gdx --storagehost
 ```
 
 **NOTE: a node can either become a storage client or a storage host. To switch between two roles, you must [clean start](#Section-Five-Program-Clean-Start) the node**
