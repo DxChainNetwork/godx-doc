@@ -82,8 +82,8 @@ $ shasum -a 256 gdx
 
 If the result you got from executing the commands above matches with one of the following hash value, it means the executable is the official one. Otherwise, delete the executable immediately and request for another downloading link.
 
-- Linux: `1662649608ab85e8eb950a4365b4f7d0ddb267e9f6272a16dd17a399ffb5a8c1 gdx`
-- MacOS: `8ed07b2ee18eed56c07ea9522654bed0620e502c3f5934e48b86e747732ec7e7 gdx`
+- Linux: `70d6267afc22156f32fc6252a21ffeeb9bd74ff9f1972e21f11601547772fd47 gdx`
+- MacOS: `b4c7d5c241b99abc448ed29653cc6f6b22dcbfe0c9caca0b655edd91f3b77452 gdx`
 
 ### Step1.4. Grant Execute Permission
 

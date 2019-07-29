@@ -73,8 +73,8 @@ $ shasum -a 256 gdx
 ```
 如果您获得的哈希值与下列的哈希值相对应，即证明您所下载的可执行文件是由官方提供。如果您获得的哈希值与提供的哈希值不符，请立即删除您下载的可执行文件并发起一个新的下载链接请求。 
  
-- Linux: `1662649608ab85e8eb950a4365b4f7d0ddb267e9f6272a16dd17a399ffb5a8c1 gdx`
-- MacOS: `8ed07b2ee18eed56c07ea9522654bed0620e502c3f5934e48b86e747732ec7e7 gdx`
+- Linux: `70d6267afc22156f32fc6252a21ffeeb9bd74ff9f1972e21f11601547772fd47 gdx`
+- MacOS: `b4c7d5c241b99abc448ed29653cc6f6b22dcbfe0c9caca0b655edd91f3b77452 gdx`
 
 ### 步骤1.4 获取执行权限
 
