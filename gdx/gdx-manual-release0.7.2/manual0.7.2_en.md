@@ -18,7 +18,7 @@ if you intend to become a storage host, please click [here](#Section-Four-Storag
     - [Step1.1. Get the `gdx` Executable](#step11-get-the-gdx-executable)
     - [Step1.2. Executable Relocation](#step12-executable-relocation)
     - [Step1.3. Executable Verification](#step13-executable-verification)
-    - [Step1.4. Grant Permission](#step14-grant-permission)
+    - [Step1.4. Grant Execute Permission](#step14-grant-execute-permission)
     - [Step1.5. Version Verification](#step15-version-verification)
 - [Section Two: Miner](#section-two-miner)
     - [Step2.1. Start Node](#step21-start-node)
@@ -85,9 +85,9 @@ If the result you got from executing the commands above matches with one of the 
 - Linux: `1662649608ab85e8eb950a4365b4f7d0ddb267e9f6272a16dd17a399ffb5a8c1 gdx`
 - MacOS: `8ed07b2ee18eed56c07ea9522654bed0620e502c3f5934e48b86e747732ec7e7 gdx`
 
-### Step1.4. Grant Permission
+### Step1.4. Grant Execute Permission
 
-Without granting the permission, the system will not allow the `gdx` program to be executed. To grant the permission, run the following command
+Without granting the execute permission, the system will not allow the `gdx` program to be executed. To grant execute permission, run the following command
 
 ```shell
 $ cd ~/bin
@@ -138,11 +138,8 @@ To acquire tokens, you will first need to create an account and start mining. Ty
 > miner.start()
 ```
 
-**NOTE: for simplification, the password used in this command is empty, meaning the account you created will not be protected by a password. To create an account with a password, use the following command in the console, the system will prompt you to enter a password.**
+**NOTE: for simplification, the password used in this command is empty.**
 
-```js
-> personal.newAccount()
-```
 
 ### Step2.4. Stop Mining
 
@@ -154,7 +151,7 @@ To stop mining, simply type the following commands in the `gdx` console.
 
 # Section Three: Storage Client
 
-Storage client serves as storage service requester, paying tokens for file storage, file uploading, and file downloading.
+By paying DX tokens to storage hosts, storage client is able to rent storage space and store files in the DX network safely and securely. When needed, storage client can download those files from the network.
 
 To start the node as a storage client, run the following command in the terminal
 
@@ -197,11 +194,7 @@ In order to create contract and start to upload file, you must have some tokens 
 > miner.start()
 ```
 
-**NOTE: for simplification, the password used in this command is empty, meaning the account you created will not be protected by a password. To create an account with a password, use the following command in the console, the system will prompt you to enter a password**
-
-```js
-> personal.newAccount()
-```
+**NOTE: for simplification, the password used in this command is empty**
 
 ### Step3.5. Unlock Account
 
@@ -244,7 +237,7 @@ If error shows up, it means you haven't create any contract yet. It may take a w
 
 ### Step3.8. File Upload
 
-Place the file you want to upload under the home directory. If you do not want to upload your own file, you can generate a file with random data by typing the following command in the terminal
+By typing the following commands in the terminal, a file named `upload.file` with random data will be created under the home directory. The file size is 512KB.
 
 ```shell
 $ cd ~
@@ -252,18 +245,17 @@ $ dd if=/dev/urandom of=upload.file count=512 bs=1024
 ```
 
 Then, get the absolute path of the file by using the following command  
-**NOTE: replace `{$FILE_NAME}` with the name of the file you want to upload**
 
 ```shell
 $ cd ~
-$ ls "`pwd`/{$FILE_NAME}"
+$ ls "`pwd`/upload.file"
 ```
 
 In the `gdx` console, use the following command to upload the file.  
-**Note: replace `{$FILE_PATH}` with the absolute path of the file**
+**Note: replace `FILE_PATH` with the absolute path of the file**
 
 ```js
-> sclient.upload("{$FILE_PATH}", "download.file")
+> sclient.upload("FILE_PATH", "download.file")
 ```
 
 ### Step3.9. Upload Progress
@@ -285,17 +277,15 @@ $ cd ~
 $ pwd
 ```
 
-Then, typing the following command in the `gdx` console (NOTE: replace `{$FILE_PATH}` with the absolute path of the home directory)
+Then, typing the following command in the `gdx` console (**NOTE: replace `FILE_PATH` with the absolute path of the home directory**)
 
 ```js
-> sclient.download("download.file", "{$FILE_PATH}/download.file")
+> sclient.download("download.file", "FILE_PATH/download.file")
 ```
 
 The file will be downloaded to your home directory as `download.file`
 
 ### Step3.11. File Verification
-
-**Note: skip this step if you uploaded your own file**
 
 Since the file uploaded is generated and filled in with random data. To check if the file downloaded is the file you actually uploaded, use the following commands
 
@@ -351,11 +341,7 @@ In order to create contract with clients, you must have some tokens first. To ge
 > miner.start()
 ```
 
-**NOTE: for simplification, the password used in this command is empty, meaning the account you created will not be protected by a password. To create an account with a password, use the following command in the console, the system will prompt you to enter a password**
-
-```js
-> personal.newAccount()
-```
+**NOTE: for simplification, the password used in this command is empty.**
 
 ### Step4.5. Unlock Account
 
@@ -402,4 +388,4 @@ Once the old data got removed, the node can be started as either storage client 
 
 # Contact Information
 
-Thank you so much for your support and your confidence in this project. If you have any question, please do not hesitated to contact us via support@dxchain.com
+Thank you so much for your support and your confidence in this project. If you have any question, please do not hesitated to contact DX via support@dxchain.com
