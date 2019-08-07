@@ -3,9 +3,6 @@
 Official [gdx](https://github.com/DxChainNetwork/godx) program documentation
 
 ## GoDx Manual
-
-* [Release 0.7.2 Manual](./gdx/gdx-manual-release0.7.2/)
-  * [English Version](./gdx/gdx-manual-release0.7.2/manual0.7.2_en.md)
-  * [Chinese Version](./gdx/gdx-manual-release0.7.2/manual0.7.2_ch.md)
-
-
+* [中文版](./gdx/gdx-manual/manual_ch.md)
+* [English Version](./gdx/gdx-manual/manual_en.md)
+  
