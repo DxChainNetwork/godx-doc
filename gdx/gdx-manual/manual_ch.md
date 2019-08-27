@@ -68,8 +68,8 @@ $ shasum -a 256 gdx
 ```
 如果您获得的哈希值与下列的哈希值相对应，即证明您所下载的可执行文件是由官方提供。如果您获得的哈希值与提供的哈希值不符，请立即删除您下载的可执行文件并发起一个新的下载链接请求。 
  
-- Linux: `65507482a510651a274a1e2cba8a9de969f67f03cbf4611131c689f63fadef3a gdx`
-- MacOS: `a5a1dd423d8fd1c227bd77c8ed98a01728a337782c3c4959b9e7358389b5bcf7 gdx`
+- Linux: `dbe1c9eff6e28d9ee8b24ee29d83eae54ada630f0e3d012d39cc3fa743ea924a gdx`
+- MacOS: `77fc8c4d110745ef132d61e408e174081926b49e6d47415bcc5c8979bd6b9b54 gdx`
 
 ### 步骤1.4 获取执行权限
 
@@ -81,7 +81,7 @@ $ chmod +x gdx
 
 ### 步骤1.5 验证版本
 
-您可以通过输入以下命令以验证版本。正确的版本应当是：`Version: 0.8.1-unstable`
+您可以通过输入以下命令以验证版本。正确的版本应当是：`Version: 0.8.2-unstable`
 ```shell
 $ ~/bin/gdx version
 ```
