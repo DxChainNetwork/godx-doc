@@ -80,8 +80,8 @@ $ shasum -a 256 gdx
 
 If the result you get from executing the commands above matches with one of the following hash values, it means the executable is the official one. Otherwise, delete the executable immediately and request for another download link.
 
-- Linux: `dbe1c9eff6e28d9ee8b24ee29d83eae54ada630f0e3d012d39cc3fa743ea924a gdx`
-- MacOS: `77fc8c4d110745ef132d61e408e174081926b49e6d47415bcc5c8979bd6b9b54 gdx`
+- Linux: `064f8c190e1c594830b20c9794e025848477a019f3e5f4312ec1eefb3726b5b4 gdx`
+- MacOS: `9162083f65b1f195574f4661515ffbaf5c1ae08045380e16692b99a67974d022 gdx`
 
 ### Step1.4. Grant Execute Permission
 
@@ -94,7 +94,7 @@ $ chmod +x gdx
 
 ### Step1.5. Version Verification
 
-Check the executable version by running the following command in the terminal. The expected version will be `Version: 0.8.2-unstable`
+Check the executable version by running the following command in the terminal. The expected version will be `Version: 0.8.3-unstable`
 
 ```shell
 $ ~/bin/gdx version
