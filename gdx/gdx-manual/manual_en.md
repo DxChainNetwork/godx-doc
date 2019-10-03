@@ -34,8 +34,8 @@ Use the link below to download the `gdx` executable that is suitable for your sy
 
 **NOTE: the executable downloaded only supports 64bit operating system**
 
-- Linux: [Download Link](download)
-- MacOS: [Download Link](download)
+- Linux: [Download Link](https://dxchainpublic.s3-us-west-1.amazonaws.com/Gdx+Release+Executable+0.9.0/LinuxAmd64/gdx-linux-amd64)
+- MacOS: [Download Link](https://dxchainpublic.s3-us-west-1.amazonaws.com/Gdx+Release+Executable+0.9.0/MacOS/gdx)
 
 
 ### Step1.2. Executable Relocation
@@ -57,8 +57,8 @@ $ shasum -a 256 gdx
 
 If the result you get from executing the commands above matches with one of the following hash values, it means the executable is the official one. Otherwise, delete the executable immediately and contact support@dxchain.com
 
-- Linux: `064f8c190e1c594830b20c9794e025848477a019f3e5f4312ec1eefb3726b5b4 gdx`
-- MacOS: `9162083f65b1f195574f4661515ffbaf5c1ae08045380e16692b99a67974d022 gdx`
+- Linux: `b11596a131754a10a4f1688345eeb86a8ad529a2f9bdb0bafc9d26f4bedddd33 gdx`
+- MacOS: `1dfe1778aa2a82a73b1bf18f14087badaf6a3e17df5ca0d5149a70e6d0f4ee20 gdx`
 
 ### Step1.4. Grant Execute Permission
 

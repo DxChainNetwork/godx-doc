@@ -1,4 +1,4 @@
-## Go DxChain 存储教程
+# Go DxChain 存储教程
 
 ## 第一部分：存储委托方教程
 

@@ -33,8 +33,8 @@
 请使用以下链接下载适用您操作系统的 `gdx` 可执行文件。请您下载完可执行文件后，将其文件名更改为`gdx`。完成重命名后请打开终端。  
 **注意: 当前您所下载的可执行文件仅支持64位系统**
 
-* Linux 系统：[Download Link]()
-* MacOS 系统：[Download Link]()
+- Linux: [下载链接](https://dxchainpublic.s3-us-west-1.amazonaws.com/Gdx+Release+Executable+0.9.0/LinuxAmd64/gdx-linux-amd64)
+- MacOS: [下载链接](https://dxchainpublic.s3-us-west-1.amazonaws.com/Gdx+Release+Executable+0.9.0/MacOS/gdx)
 
 ### 步骤1.2 迁移`gdx`可执行文件
 
@@ -52,8 +52,8 @@ $ shasum -a 256 gdx
 ```
 如果您获得的哈希值与下列的哈希值相对应，即证明您所下载的可执行文件是由官方提供。如果您获得的哈希值与提供的哈希值不符，请立即删除您下载的可执行文件并反馈给 support@dxchain.com。 
  
-- Linux: ` gdx`
-- MacOS: ` gdx`
+- Linux: `b11596a131754a10a4f1688345eeb86a8ad529a2f9bdb0bafc9d26f4bedddd33 gdx`
+- MacOS: `1dfe1778aa2a82a73b1bf18f14087badaf6a3e17df5ca0d5149a70e6d0f4ee20 gdx`
 
 ### 步骤1.4 获取执行权限
 
