@@ -26,7 +26,7 @@ To create contracts and then upload files, you must have enough DX tokens. You c
 > eth.getBalance(eth.accounts[0])
 ```
 
-> NOTE: before you proceed to _Step3.4. Client Configuration_, please make sure that you are connected to at least 3 hosts. You can run the following code to get the number of storage hosts you are connected to. If it returns an error, it means no host is available yet.
+> NOTE: before you proceed to _Step1.2. Client Configuration_, please make sure that you are connected to at least 3 hosts. You can run the following code to get the number of storage hosts you are connected to. If it returns an error, it means no host is available yet.
 ```shell
 sclient.host.ls.length
 ```
@@ -115,7 +115,7 @@ Storage hosts serve as storage service providers, gaining profit for storing dat
 
 ### Step2.1. Check Balance
 
-As mentioned above, to create contracts, you must have some tokens. Use the following command in the console to check the balance. Wait until the result is not 0, and then you can proceed to the next step.
+To create contracts, you must have some tokens. Use the following command in the console to check the balance. Wait until the result is not 0, and then you can proceed to the next step.
 
 ```js
 > eth.getBalance(eth.accounts[0])

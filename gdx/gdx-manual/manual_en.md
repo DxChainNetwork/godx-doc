@@ -16,11 +16,11 @@ This document introduces operations that each node is able to perform. Before tr
     - [Step1.2. Executable Relocation](#step12-executable-relocation)
     - [Step1.3. Executable Verification](#step13-executable-verification)
     - [Step1.4. Grant Execute Permission](#step14-grant-execute-permission)
-    - [Step1.6. Start Node](#step16-start-node)
-    - [Step1.7. Open `gdx` Console](#step17-open-gdx-console)
-    - [Step1.8. Create account](#step18-create-account)
-    - [Step1.9. Get Test DX Token](#step19-get-test-dx-token)
-    - [Step1.10. Unlock the account](#step110-unlock-the-account)
+    - [Step1.5. Start Node](#step15-start-node)
+    - [Step1.6. Open `gdx` Console](#step16-open-gdx-console)
+    - [Step1.7. Create account](#step17-create-account)
+    - [Step1.8. Get Test DX Token](#step18-get-test-dx-token)
+    - [Step1.9. Unlock the account](#step19-unlock-the-account)
 - [Section Two: Storage Tutorial](#section-two-storage-tutorial)
 - [Section Three: DPOS Tutorial](#section-three-dpos-tutorial)
 - [Section Four: Program Clean Start](#section-four-program-clean-start)
@@ -69,7 +69,7 @@ $ cd ~/bin
 $ chmod +x gdx
 ```
 
-### Step1.6. Start Node
+### Step1.5. Start Node
 
 **NOTE: if the node is running or previously ran, you must terminate the program by pressing `Ctrl + C` and then [clean start](#section-four-program-clean-start) the node.**
 
@@ -79,7 +79,7 @@ To start the node, simply type the following command in the terminal:
 $ ~/bin/gdx
 ```
 
-### Step1.7. Open `gdx` Console
+### Step1.6. Open `gdx` Console
 
 Open another terminal panel and start the gdx console by using the following command:
 
@@ -87,7 +87,7 @@ Open another terminal panel and start the gdx console by using the following com
 $ ~/bin/gdx attach
 ```
 
-### Step1.8. Create account
+### Step1.7. Create account
 
 Once the gdx console is opened, type the following command to create an account:
 
@@ -97,11 +97,11 @@ Once the gdx console is opened, type the following command to create an account:
 
 **NOTE: for simplification, the password used in this command is empty.**
 
-### Step1.9. Get Test DX Token
+### Step1.8. Get Test DX Token
 
 After the account is created, you need to get some DX token in order to try out new features. Using the website [here](https://dxfaucet.dxchain.com) to get some test DX token.
 
-### Step1.10. Unlock the account
+### Step1.9. Unlock the account
 
 If the account is locked, you will not be allowed to make any transaction. Typing the following command to unlock the account:
 
