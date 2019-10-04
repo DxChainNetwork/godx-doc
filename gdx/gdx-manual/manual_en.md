@@ -57,8 +57,8 @@ $ shasum -a 256 gdx
 
 If the result you get from executing the commands above matches with one of the following hash values, it means the executable is the official one. Otherwise, delete the executable immediately and contact support@dxchain.com
 
-- Linux: `b11596a131754a10a4f1688345eeb86a8ad529a2f9bdb0bafc9d26f4bedddd33 gdx`
-- MacOS: `1dfe1778aa2a82a73b1bf18f14087badaf6a3e17df5ca0d5149a70e6d0f4ee20 gdx`
+- Linux: `5c1d478f8d8e3ab11a9428266a63786882114120ed7f2abb714954d4bf168789 gdx`
+- MacOS: `ac8642c15d5b7737bffe341e7b52141ee2fe0228a35d7341015dde80b988a80f gdx`
 
 ### Step1.4. Grant Execute Permission
 
